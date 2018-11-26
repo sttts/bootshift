@@ -7,7 +7,6 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/bootshift/pkg/util"
 	"github.com/openshift/bootshift/pkg/version"
 )
 
@@ -32,8 +31,8 @@ var (
 
 func main() {
 	flag.Parse()
-	util.InitLogs()
-	defer util.FlushLogs()
+	InitLogs()
+	defer FlushLogs()
 
 	cmdRoot.AddCommand(cmdVersion)
 	if err := cmdRoot.Execute(); err != nil {
