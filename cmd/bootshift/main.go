@@ -7,14 +7,14 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/kubernetes-incubator/bootkube/pkg/util"
-	"github.com/kubernetes-incubator/bootkube/pkg/version"
+	"github.com/openshift/bootshift/pkg/util"
+	"github.com/openshift/bootshift/pkg/version"
 )
 
 var (
 	cmdRoot = &cobra.Command{
-		Use:           "bootkube",
-		Short:         "Bootkube!",
+		Use:           "bootshift",
+		Short:         "Bootshift!",
 		SilenceErrors: true, // suppress cobra errors so we can handle them (also applies to subcommands)
 		Long:          "",
 	}

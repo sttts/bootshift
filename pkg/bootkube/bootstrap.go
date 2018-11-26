@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/kubernetes-incubator/bootkube/pkg/asset"
+	"github.com/openshift/bootshift/pkg/asset"
 )
 
 type bootstrapControlPlane struct {
